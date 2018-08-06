@@ -1,0 +1,507 @@
+body{
+    font-family: 'Quicksand:300', sans-serif;
+    /*starts page off with full window and enables backgroud image to be used correctly if needed */
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.background-container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: url("../images/landing_image2.jpg") no-repeat 50% 50%; /*image for background of page*/
+    display: table;
+    background-size: cover;
+}
+
+/* nav bar styling */
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: rgba(163, 0, 33, 0.9);
+    position: relative;
+    z-index: 9; /* ensures nav bar falls on top of other elements*/
+}
+
+ul li{
+    display: inline-block;
+
+}
+
+/* 1st row of items */
+ul li a{
+    color: #b5becc;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+/* 1st row of items upon hover */
+ul li a:hover{
+    color: #787c82;
+}
+
+/* drop down */
+ul ul {
+    position: absolute;
+    min-width: 180px;
+    display: none;
+}
+
+/* dropped down items */
+ul ul li{
+    display: block;
+}
+
+/* dropped down items upon hover */
+ul li:hover ul{
+    display: block;
+}
+
+/* icon styling */
+i{
+    color: #b5becc;
+    padding-left: 5px;
+}
+
+/* Social media icons */
+#facebook:hover{
+    color: #787c82
+}
+
+#twitter:hover{
+    color: #787c82
+}
+
+#instagram:hover{
+    color: #787c82
+}
+
+
+/* burger icon styling */
+#burger{
+    background-color: rgba(163, 0, 33, 0.9);
+    color: #b5becc;
+    font-size: 25px;
+    padding: 0.7em;
+    cursor: pointer;
+    display: none;
+}
+
+/* container */
+#text-container{
+    width: 700px;
+    height: 800px;
+    margin: 100px auto;
+    background-color: rgba(181, 190, 204, 0.5);
+    position: relative;
+    border-radius: 50px;
+}
+
+/* 'about us' heading */
+#text-container h1{
+    padding: 10px;
+    margin: 0;
+    font-size: 4em;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    position: relative;
+    color: rgba(163, 0, 33, 0.9);
+}
+/* 'Locations' and 'Contact' headings */
+#text-container h3{
+    padding: 10px;
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    color: rgba(163, 0, 33, 0.9);
+}
+
+/* all the text */
+#text-container p{
+    padding: 10px;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+    position: relative;
+    color: black;
+}
+
+/* button to reveal total on checkout page */
+#show-total-btn{
+    background-color: rgba(163, 0, 33, 0.9);
+    color: black;
+    font-size: 1.2em;
+    padding: 8px;
+    margin: 10px 140px;
+    border: solid black;
+    text-decoration: none;
+    border-radius: 20px;
+}
+/* upon hover */
+#show-total-btn:hover{
+    color: rgba(120, 124, 130, 0.9);
+    border: solid rgba(120, 124, 130, 0.9);
+}
+
+/* button that clears the items from the cart */
+#clear-btn{
+    background-color: rgba(163, 0, 33, 0.9);
+    color: black;
+    font-size: 1.2em;
+    padding: 8px;
+    margin: 10px 240px;
+    border: solid black;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#clear-btn:hover{
+    color: rgba(120, 124, 130, 0.9);
+    border: solid rgba(120, 124, 130, 0.9);
+}
+
+
+#totalLabel{
+    font-size: 1.7em;
+    margin-top: 20px;
+    margin-left: 275px;
+}
+
+
+#info-div{
+    margin-left: 180px;
+    color: rgba(163, 0, 33, 0.9);
+}
+
+#form-div{
+    margin: 0 200px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#confirm-purchase{
+    background-color: rgba(163, 0, 33, 0.9);
+    color: black;
+    font-size: 1.2em;
+    padding: 8px;
+    border: solid black;
+    text-decoration: none;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#confirm-purchase:hover{
+    color: rgba(120, 124, 130, 0.9);
+    border: solid rgba(120, 124, 130, 0.9);
+}
+
+input{
+    background-color: rgba(120, 124, 130, 0.9);
+    border: solid rgba(163, 0, 33, 0.5);
+}
+
+#text-container-checkout{
+    width: 700px;
+    height: 800px;
+    margin: 100px auto;
+    background-color: rgba(181, 190, 204, 0.5);
+    position: relative;
+    border-radius: 50px;
+}
+
+#checkout-h1{
+    padding: 10px;
+    margin: 0;
+    font-size: 4em;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    position: relative;
+    color: rgba(163, 0, 33, 0.9);
+}
+
+#checkout-h3{
+    padding: 10px;
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    color: rgba(163, 0, 33, 0.9);
+}
+
+#create-text{
+    text-align: center;
+}
+
+
+/* Paint app */
+/* section */
+#paint-app{
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+canvas{
+    display: block;
+    border: 2px solid black;
+    margin: 10px auto 0px;
+}
+
+button{
+    outline: 0; /*removes default outline from button tags*/
+    border: 0; /*removes default border from button tags*/
+}
+
+#drawingTools{
+    width: 800px;
+    height: 80px;
+    margin: 0px auto;
+}
+
+#colors{
+    width: 100%;
+    height: 20px;
+}
+
+/* button styling (ones that are inside the colors div) */
+#colors button{
+    width: 20%;
+    height: 10px;
+    margin-top: 5px;
+    float: left;
+}
+
+/* When hovered over gives the colors some transparency */
+#colors button:hover{
+    opacity: 0.5;
+}
+
+/* displaying the 5 colors */
+#black{
+    background-color: black;
+}
+
+#white{
+    background-color: white;
+}
+
+#red{
+    background-color: red;
+}
+
+#green{
+    background-color: green;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#otherTools{
+    width: 100%;
+    height: 60px;
+}
+
+/* Clear button styling  */
+#otherTools button{
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    background: grey;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#otherTools button:hover{
+    opacity: 0.5;
+}
+
+#container-create{
+    width: 1000px;
+    height: 1000px;
+    margin: 100px auto;
+    background-color: rgba(181, 190, 204, 0.5);
+    border-radius: 20px;
+}
+
+#create-heading{
+    padding: 10px;
+    margin: 0;
+    font-size: 4em;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    position: relative;
+    color: rgba(163, 0, 33, 0.9);
+}
+
+#buy-create{
+    background-color: rgba(163, 0, 33, 0.9);
+    color: black;
+    font-size: 1.2em;
+    padding: 8px;
+    margin: 10px 350px;
+    border: solid black;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#buy-create:hover{
+    color: rgba(120, 124, 130, 0.9);
+    border: solid rgba(120, 124, 130, 0.9);
+}
+
+
+
+/*sizing*/
+
+/*tablet*/
+
+@media screen and (max-width: 768px){
+    /* when screen reaches tablet size, the burger will be displayed and all menu items will be hidden and about us text will decrease 
+    accordingly */
+    #burger{
+        display: block;
+    }
+    ul{
+        position: static;
+        background-color: rgba(163, 0, 33, 0.9);
+        display: none;
+    }
+    
+    ul li{
+        display: block;
+    }
+
+    ul ul {
+        position: static;
+        background-color: rgba(163, 0, 33, 0.9);
+    }
+
+    /* heading and text reduce in size when reaches tablet size */
+    #text-container h1{
+        font-size: 3em;
+    }
+
+    #text-container h3{
+        font-size: 1.5em;
+    }
+
+    #text-container p{
+        font-size: 0.75em;
+    }
+
+    /* container will reduce in size when reaches tablet size*/
+    #text-container{
+        width: 450px;
+        height: 500px;
+        margin: 75px auto;
+    }
+
+    /* checkout page */
+    #text-container-checkout{
+        width: 500px;
+        height: 800px;
+        margin: 100px auto;
+        background-color: rgba(181, 190, 204, 0.5);
+        position: relative;
+        border-radius: 50px;
+    }
+
+    #clear-btn {
+        font-size: 0.9em;
+        padding: 5px 60px;
+        margin: 10px 130px;
+    }
+
+    #totalLabel{
+        font-size: 1.5em;
+        padding: 1px 60px;
+        margin: 1px 90px;
+    }
+
+
+    #info-div{
+        margin: 10px 50px;
+        font-size: 0.5em;
+        text-align: center;
+    }
+    
+    #form-div{
+        font-size: 0.8em;
+    }
+
+}
+
+
+/* moblie screen size */
+@media screen and (max-width: 480px){
+    /* heading and text reduce even more in size when reaches moblie size */
+    #text-container h1{
+        font-size: 2.8em;
+    }
+
+    #text-container h3{
+        font-size: 1.125em;
+    }
+
+    #text-container p{
+        font-size: 0.5625em;
+    }
+
+    /* container will reduce even more in size when reaches mobile size*/
+    #text-container{
+        width: 300px;
+        height: 450px;
+        margin: 56px auto;
+    }
+
+    /* checkout page */
+    #text-container-checkout{
+        width: 400px;
+        height: 1000px;
+        margin: 100px auto;
+        background-color: rgba(181, 190, 204, 0.5);
+        position: relative;
+        border-radius: 50px;
+    }
+    
+    #clear-btn {
+        font-size: 0.9em;
+        padding: 5px 60px;
+        margin: 10px 130px;
+    }
+
+    #show-total-btn{
+        font-size: 0.8em;
+    }
+    
+    #totalLabel{
+        font-size: 0.8em;
+        padding: 1px 60px;
+        margin: 1px 90px;
+    }
+    
+    #checkout-total{
+        font-size: 1.6em;
+    }
+    
+    #info-div{
+        margin: 10px 50px;
+        font-size: 0.5em;
+        text-align: center;
+    }
+        
+    #form-div{
+        margin: 0px 30px;
+    }
+
+
+
+}
+

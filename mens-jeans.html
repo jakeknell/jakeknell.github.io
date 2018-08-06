@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title -->
+    <title>JK Clothing</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- style sheets-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/clothing-style.css">
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/png" href="images/JK_logo.png">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <section class="background-container">
+    <!-- Nav bar -->
+    <nav>
+        <!-- icon for when screen size is reduced (mobile / tablet) -->
+        <div id="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+
+
+        <ul>
+            <li><a href="aboutus.html">About us</a></li> <!--Home button-->
+            <li><a href="#">Mens <i class="fas fa-angle-down"></i></a><!--Mens button(will drop)-->
+                <!-- drop -->
+                <ul>
+                    <li><a href="mens-shirts.html">Shirts</a></li>
+                    <li><a href="mens-jeans.html">Jeans</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="#">Womens<i class="fas fa-angle-down"></i></a> <!--Womens button(will drop)-->
+                <!-- drop -->
+                <ul>
+                    <li><a href="womens-shirts.html">Shirts</a></li>
+                    <li><a href="womens-bottoms.html">Bottoms</a></li>
+                </ul>
+            </li>
+            <li><a href="create.html">Create</a></li> <!--Create button-->
+            <li><a href="checkout.html">Checkout<i class="fas fa-shopping-cart"></i></a></li> <!--Checkout button-->
+            <li><a href="#">Other<i class="fas fa-angle-down"></i></a><!--Other button(will drop)-->
+                <!-- drop -->
+                <ul>
+                    <li><a href="demo.html">Demo</a></li>
+                    <li><a href="log.html">Log</a></li>
+                </ul>
+            </li>
+            <li><a class="social-media" href="https://www.facebook.com/"><i id="facebook" class="fab fa-facebook-f"></i></a></li>
+            <li><a class="social-media" href="https://twitter.com/"><i id="twitter" class="fab fa-twitter"></i></a></li>
+            <li><a class="social-media" href="https://www.instagram.com/"><i id="instagram" class="fab fa-instagram"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- container -->
+    <div id="clothing-container">
+
+        <!-- black mens jeans  -->
+            <div class="box">
+                <div id="blackj-div">
+                <!-- Image will be placed here via the css  -->    
+                </div>
+                <p class="price">Price: £45.00</p>
+	        <!-- Form for mens black jeans -->
+	        <form id="mens-black-t">
+            <div class="sizing">
+                <label class="container">Small
+                    <input name="blackt-size" type="radio" required>
+                    <span class="checkmark"></span>
+                </label>
+                          
+                <label class="container">Medium
+                    <input name="blackt-size" type="radio" required>
+                    <span class="checkmark"></span>
+                </label>
+                          
+                <label class="container">Large
+                    <input name="blackt-size" type="radio" required>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="submit-button-div">
+                <!-- When button is pressed, the 'add-item', funciton will be ran. -->
+                <input class="submit-button-input" type="submit" onclick="addItem('Mens black jeans', '45.00');" value="Add to cart">
+            </div>
+        </form>
+            </div>
+        
+        <!-- white mens jeans -->
+            <div class="box">
+                    <div id="whitej-div">
+                    <!-- Image will be placed here via the css  -->    
+                    </div>
+                    <p class="price">Price: £40.00</p>
+                <!-- Form for white mens jeans -->
+                <form id="mens-white-j">
+                <div class="sizing">
+                    <label class="container">Small
+                        <input name="whitej-size" type="radio" required>
+                        <span class="checkmark"></span>
+                    </label>
+                              
+                    <label class="container">Medium(out of stock)
+                        <input name="whitej-size" type="radio" disabled="disabled" required>
+                        <span class="checkmark"></span>
+                    </label>
+                              
+                    <label class="container">Large
+                        <input name="whitej-size" type="radio" required>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="submit-button-div">
+                    <!-- When button is pressed, the 'add-item', funciton will be ran. -->
+                    <input class="submit-button-input" type="submit" onclick="addItem('Mens white jeans', '40.00');" value="Add to cart">
+                </div>
+            </form>
+                </div>
+
+        <!-- blue mens jeans -->
+        <div class="box">
+                <div id="bluej-div">
+                <!-- Image will be placed here via the css  -->
+                </div>
+                <p class="price">Price: £50.00</p>
+            <!-- Form for mens blue jeans -->
+            <form id="mens-blue-j">
+            <div class="sizing">
+                <label class="container">Small
+                    <input name="bluej-size" type="radio" required>
+                    <span class="checkmark"></span>
+                </label>
+                          
+                <label class="container">Medium
+                    <input name="bluej-size" type="radio" required>
+                    <span class="checkmark"></span>
+                </label>
+                          
+                <label class="container">Large
+                    <input name="bluej-size" type="radio" required>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="submit-button-div">
+                <!-- When button is pressed, the 'add-item', funciton will be ran. -->
+                <input class="submit-button-input" type="submit" onclick="addItem('Mens blue jeans', '50.00');" value="Add to cart">
+            </div>
+        </form>
+            </div>
+
+        <!-- short mens jeans -->
+        <div class="box">
+                <div id="shortj-div">
+                <!-- Image will be placed here via the css  -->
+                </div>
+                <p class="price">Price: £50.00</p>
+            <!-- Form for mens short jeans -->
+            <form id="mens-short-j">
+            <div class="sizing">
+                <label class="container">Small
+                    <input name="shortj-size" type="radio" required>
+                    <span class="checkmark"></span>
+                </label>
+                          
+                <label class="container">Medium
+                    <input name="shortj-size" type="radio" required>
+                    <span class="checkmark"></span>
+                </label>
+                          
+                <label class="container">Large(out of stock)
+                    <input name="shortj-size" type="radio" disabled="disabled" required>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="submit-button-div">
+                <!-- When button is pressed, the 'add-item', funciton will be ran. -->
+                <input class="submit-button-input" type="submit" onclick="addItem('Mens short jeans', '50.00');" value="Add to cart">
+            </div>
+        </form>
+            </div>       
+
+    
+            
+    </div>
+    
+    </section>
+
+<script src="js/myscript.js"></script>
+    
+</body>
+</html>

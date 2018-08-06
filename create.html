@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title -->
+    <title>JK Clothing</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- style sheet link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/png" href="images/JK_logo.png">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <section class="background-container">
+    <!-- Nav bar -->
+    <nav>
+        <!-- icon for when screen size is reduced (mobile / tablet) -->
+        <div id="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+
+
+        <ul>
+            <li><a href="aboutus.html">About us</a></li> <!--Home button-->
+            <li><a href="#">Mens <i class="fas fa-angle-down"></i></a><!--Mens button(will drop)-->
+                <!-- drop -->
+                <ul>
+                    <li><a href="mens-shirts.html">Shirts</a></li>
+                    <li><a href="mens-jeans.html">Jeans</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="#">Womens<i class="fas fa-angle-down"></i></a> <!--Womens button(will drop)-->
+                <!-- drop -->
+                <ul>
+                    <li><a href="womens-shirts.html">Shirts</a></li>
+                    <li><a href="womens-bottoms.html">Bottoms</a></li>
+                </ul>
+            </li>
+            <li><a href="create.html">Create</a></li> <!--Create button-->
+            <li><a href="checkout.html">Checkout<i class="fas fa-shopping-cart"></i></a></li> <!--Checkout button-->
+            <li><a href="#">Other<i class="fas fa-angle-down"></i></a><!--Other button(will drop)-->
+                <!-- drop -->
+                <ul>
+                    <li><a href="demo.html">Demo</a></li>
+                    <li><a href="log.html">Log</a></li>
+                </ul>
+            </li>
+            <li><a class="social-media" href="https://www.facebook.com/"><i id="facebook" class="fab fa-facebook-f"></i></a></li>
+            <li><a class="social-media" href="https://twitter.com/"><i id="twitter" class="fab fa-twitter"></i></a></li>
+            <li><a class="social-media" href="https://www.instagram.com/"><i id="instagram" class="fab fa-instagram"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Text container centre of page -->
+    <div id="container-create">
+        <h1 id="create-heading">Create your own...</h1>
+        <h4 id="create-text">Create your own t shirt design below, and we'll make it for you, for just £50.00</h4>
+
+        <!-- Paint app -->
+        <section id="paint-app">
+            <div id="drawingTools">
+                <div id="colors">
+                    <button id="black" onclick="changeColor('black')"></button>
+                    <button id="white" onclick="changeColor('white')"></button>
+                    <button id="red" onclick="changeColor('red')"></button>
+                    <button id="green" onclick="changeColor('green')"></button>
+                    <button id="blue" onclick="changeColor('blue')"></button>
+                </div>
+
+                <div id="otherTools">
+                    <button id="clearCanvas" onclick="clearCanvas()">Clear</button>
+                </div>
+            </div>
+
+
+            <canvas id="canvas" width="800" height="500"></canvas>
+        </section>
+
+        <button id="buy-create" onclick="addItem('Custom shirt', '50.00');">Add custom shirt to cart</button>
+
+
+
+
+
+
+    </div>
+    
+    </section>
+
+<script src="js/myscript.js"></script>
+    
+</body>
+</html>
